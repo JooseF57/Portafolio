@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio profesional de desarrollador Full Stack">
+    <title>Portfolio | Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Animación de fondo -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navegación -->
+    <nav>
+        <div class="nav-container">
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Skills</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            
+            <h1>
+                Transformo ideas en <br>
+                <span class="gradient-text">experiencias digitales</span>
+            </h1>
+            <p class="subtitle">
+                Desarrollador Full Stack especializado en crear aplicaciones web escalables,
+                modernas y de alto rendimiento
+            </p>
+            <div class="cta-buttons">
+                <a href="#proyectos" class="cta-primary">Ver Proyectos</a>
+                <a href="#contacto" class="cta-secondary">Hablemos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <div class="section-header">
+            <div class="section-badge">Portafolio</div>
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p class="section-description">
+                Una selección de proyectos que demuestran mi experiencia en desarrollo 
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🐶</div>
+                <div class="project-content">
+                    <h3 class="project-title">App accesorios de mascotas- API REST</h3>
+                    <p class="project-description">
+                        Aplicacion movil para comprar accesorios de mascotas con integración de API REST creado desde
+                        cero utilizando React Native y Node.js.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/DeividMB1909/petstyle.git" class="project-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🌍</div>
+                <div class="project-content">
+                    <h3 class="project-title">Travel AGS</h3>
+                    <p class="project-description">
+                        Pagina web de una agencia de viajes ficticia en donde los usuarios pueden 
+                        ver informacion sobre la agencia, destinos y paquetes turísticos.
+
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JooseF57/Travel-AGS.git" class="project-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🛢️</div>
+                <div class="project-content">
+                    <h3 class="project-title">SGBD simultaneos</h3>
+                    <p class="project-description">
+                        Pagina web que muestra dos sistema de gestion de bases de datos
+                        utilizandose simultaneamente con sus propios CRUD y filtros. En este 
+                        caso, se utilizo MongoDB y SQL Server.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">SQL Server</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://drive.google.com/file/d/1KvgKGAAfzndQrWT5JugfIA7A7hEErVZO/view?usp=sharing" class="project-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <div class="section-header">
+            <div class="section-badge">Expertise</div>
+            <h2 class="section-title">Habilidades & Tecnologías</h2>
+            <p class="section-description">
+                Stack tecnológico con el que trabajo para crear soluciones de alto impacto
+            </p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name"><span>React / Next.js</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>TypeScript</span><span>92%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 92%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Vue.js / Nuxt</span><span>88%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Tailwind CSS</span><span>96%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 96%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Node.js / Express</span><span>93%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 93%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Python / Django</span><span>87%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 87%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>PostgreSQL</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>GraphQL</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Database Management System</h3>
+                <div class="skill-item">
+                    <div class="skill-name"><span>MongoDB</span><span>88%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Microsoft SQL Server</span><span>86%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 86%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>MySQL</span><span>91%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 91%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Oracle Database</span><span>89%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 89%"></div></div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Herramientas & Soft Skills</h3>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Git / GitHub</span><span>97%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 97%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Agile / Scrum</span><span>94%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 94%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>UI/UX Design</span><span>83%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 83%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name"><span>Testing (Jest/Cypress)</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <div class="section-header">
+            <div class="section-badge">Conectemos</div>
+            <h2 class="section-title">¿Quieres comunicarte conmigo?</h2>
+            <p class="section-description">
+                Estoy disponible para trabajar en proyectos, colaboraciones, practicas profesionales posiciones full-time
+            </p>
+        </div>
+        <div class="contact-content">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=2236000408@utna.edu.mx" 
+   class="cta-primary" 
+   target="_blank" 
+   title="Enviar correo">
+   Enviar Correo
+</a>
+
+            <div class="social-links">
+                <a href="https://wa.me/524495847679?text=Hola%20Jos%C3%A9%2C%20me%20gustar%C3%ADa%20comunicarme%20contigo" 
+   class="social-link" 
+   title="WhatsApp" 
+   target="_blank">
+   <i class="fa-brands fa-whatsapp"></i> WA
+</a>
+
+
+                <a href="https://www.linkedin.com/in/jose-alfredo-flores-rodriguez-8776b7315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" 
+   class="social-link" 
+   title="LinkedIn" 
+   target="_blank">
+   IN
+</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Portfolio. Diseñado y desarrollado con pasión 💜</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
